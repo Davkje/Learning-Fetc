@@ -2,13 +2,13 @@
 
 <template>
   <main>
-    <h1>Home</h1>
+    <h1>Posts</h1>
   </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-  background-color: rgb(192, 210, 237);
+  background-color: rgb(244, 207, 237);
   margin: 1rem;
   padding: 1rem;
   height: 60vh;
