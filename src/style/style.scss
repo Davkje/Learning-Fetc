@@ -84,3 +84,20 @@ a {
   font-size: 1.2rem;
   text-decoration: none;
 }
+
+
+.todo {
+  border: solid rgb(105, 105, 105) 2px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.done {
+  display: block;
+  color: rgb(39, 125, 58);
+}
+
+.date {
+  display: block;
+  color: rgb(147, 147, 147);
+}
