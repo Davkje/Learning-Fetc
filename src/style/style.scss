@@ -8,6 +8,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -85,19 +86,80 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+
+  input {
+    border-radius: 4px;
+    border: solid rgba(0, 0, 0, 0.333) 2px;
+    padding: 4px;
+  }
+
+  select {
+    border-radius: 4px;
+    border: solid rgba(0, 0, 0, 0.333) 2px;
+    padding: 4px;
+  }
+}
+
+// --- TODOS --- 
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+}
 
 .todo {
-  border: solid rgb(105, 105, 105) 2px;
+  border: solid rgba(0, 0, 0, 0.12) 2px;
+  background-color: rgba(255, 255, 255, 0.819);
   padding: 1rem;
   border-radius: 1rem;
 }
 
 .done {
   display: block;
-  color: rgb(39, 125, 58);
+  text-transform: capitalize;
+  color: rgb(191, 20, 20);
+  font-weight: 600;
 }
 
 .date {
   display: block;
-  color: rgb(147, 147, 147);
+  color: rgb(155, 155, 155);
+}
+
+// --- POSTS --- 
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.post {
+  border: solid rgba(0, 0, 0, 0.12) 2px;
+  background-color: rgba(255, 255, 255, 0.819);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.content {
+  display: block;
+  color: rgb(0, 0, 0);
+}
+
+.author {
+  display: block;
+  color: rgb(70, 70, 70);
+  font-style: italic;
 }
