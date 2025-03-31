@@ -13,8 +13,9 @@ const todoElement = ref<HTMLDivElement | null>(null) // Vue ref för att hantera
 const getQueryString = (e?: Event): string => {
   if (e) {
     const target = e.target as HTMLInputElement | HTMLSelectElement
-    console.log(target.name, target.value)
-    return `?${target.name}=${encodeURIComponent(target.value)}`
+    const key = target.name
+    const value = encodeURIComponent(target.value.toLowerCase()) // 👈 Konvertera till lowercase
+    return `?${key}=${value}`
   }
   return ''
 }

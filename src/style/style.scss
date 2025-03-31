@@ -58,6 +58,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  text-transform: capitalize;
 }
 
 #root,
@@ -71,18 +72,8 @@ body {
   background-color: rgb(235, 236, 241);
 }
 
-nav {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  height: 4rem;
-}
-
 a {
-  color: white;
-  font-size: 1.2rem;
+  color: rgb(87, 76, 211);
   text-decoration: none;
 }
 
@@ -90,6 +81,21 @@ h1 {
   text-align: center;
   font-size: 2rem;
 }
+
+nav {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 4rem;
+
+  a {
+    color: rgb(238, 238, 238);
+    font-size: 1.2rem;
+  }
+}
+
 
 form {
   display: flex;
